@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Technical_01</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">_technical_01</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/gallery">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>_technical_01</h3>
+                <p>Amazon projects aur tech updates ka sabse bharosemand source. Aman Meena dwara sanchalit.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> India, Jaipur, Karauli</p>
+                <p><i class="fas fa-phone"></i> +91 8696434884</p>
+                <p><i class="fas fa-envelope"></i> Xemoh1950t@proton.me</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_technical_01"><i class="fab fa-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaDFCbF9hXFDBUx8fe3E"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://x.com/_technical_01"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://medium.com/@_technical_01"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="credit">Created with ❤️ by Amit Meena | &copy; 2025 _technical_01</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ 
+            duration: 1000, 
+            once: false,
+            mirror: true
+        });
+    </script>
+</body>
+</html>

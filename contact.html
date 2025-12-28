@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<main class="container">
+    <section class="contact-header" data-aos="fade-down">
+        <h1>Contact Us</h1>
+        <p>Hamein khushi hogi aapse baat karke! Neeche diye gaye form ko bharein ya direct contact karein.</p>
+    </section>
+
+    <div class="contact-wrapper">
+        <section class="contact-form-section" data-aos="fade-right">
+            <form action="#" class="contact-form">
+                <div class="form-group">
+                    <label>Aapka Naam</label>
+                    <input type="text" placeholder="Apna naam likhein" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Apna email likhein" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Aapka sandesh..." required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </section>
+
+        <section class="contact-details-side" data-aos="fade-left">
+            <div class="info-card">
+                <h3>Our Office</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jaipur - Karauli, Rajasthan, India</p>
+                <p><i class="fas fa-phone"></i> +91 8696434884</p>
+                <p><i class="fas fa-envelope"></i> Xemoh1950t@proton.me</p>
+            </div>
+            <div class="info-card">
+                <h3>Work Hours</h3>
+                <p>Monday - Friday: 9 AM - 6 PM</p>
+                <p>Saturday: 10 AM - 4 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </section>
+    </div>
+</main>
+{% endblock %}

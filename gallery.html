@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects Gallery{% endblock %}
+
+{% block content %}
+<main class="container">
+    <section class="gallery-header" data-aos="fade-down">
+        <h1>Amazon Projects Showcase</h1>
+        <p>Ek nazar hamare latest aur trending Amazon projects par.</p>
+    </section>
+
+    <div class="gallery-grid">
+        <div class="gallery-item" data-aos="zoom-in">
+            <img src="https://github.com/Amitmeena55/Aman-Meena-/raw/main/Technical_01.jpg" alt="Project 1">
+            <div class="gallery-overlay">
+                <h3>Smart Gadgets</h3>
+                <p>Latest Amazon finds</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://github.com/Amitmeena55/Aman-Meena-/raw/main/aman1.jpg" alt="Project 2">
+            <div class="gallery-overlay">
+                <h3>Tech Reviews</h3>
+                <p>Unboxing & testing</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://github.com/Amitmeena55/Aman-Meena-/raw/main/aman3.jpg" alt="Project 3">
+            <div class="gallery-overlay">
+                <h3>Tutorials</h3>
+                <p>Step-by-step guides</p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
